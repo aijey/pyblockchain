@@ -1,2 +1,8 @@
 # pyblockchain
-here will be written an implementation of blockchain using python
+
+Simple implementation using Python and Flusk
+
+## How to run?
+
+1. Clone repo
+1. 'python3 main.py'
