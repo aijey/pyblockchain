@@ -104,7 +104,7 @@ def print_chain():
 @app.route('/mine')
 def mine():
     blockchain.mine()
-    return redirect('/')
+    return "Success" + btnGoHome;
     
 @app.route('/add_transaction', methods=('GET','POST'))
 def add_transaction():
