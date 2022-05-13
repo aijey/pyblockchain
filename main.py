@@ -106,6 +106,10 @@ def mine():
     blockchain.mine()
     return redirect('/')
     
+@app.route('/secret_feature')
+def secret_feature():
+    return "<h1> Hello world! </h1>" + btnGoHome
+    
 @app.route('/add_transaction', methods=('GET','POST'))
 def add_transaction():
     if request.method == 'POST':
@@ -117,6 +121,7 @@ def add_transaction():
         html = f.read()
         f.close()
         return html
+        
     
 
 app.run(debug=True, port=5000)
